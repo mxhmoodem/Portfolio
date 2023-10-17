@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img{
+    height: 90px;
+}
+
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    padding: 0;
+    background-color: #212223;
+    border-bottom: 2px solid #212223;
+    box-shadow: 0 2px 50px #212223;
+    padding: 0 50px;
+    width: 100%;
+    margin: 0;
+    z-index: 100;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.desktopnav ul li{
+    padding: 0 30px;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.header ul li:hover {
+    color: rgb(174, 17, 174);
+}
+
+/*
+.header ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}*/
+
+.bookatable {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #fff;
+    background-color: #555556;
+    border-radius: 6px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    padding-left: 8px;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    letter-spacing: -.3px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.bookatable:hover {
+    cursor: pointer;
+    background-color: #909092;
+}
+
+.arrow {
+    margin: 0 0 0 10px;
+}
+
+.mobilenav ul {
+    display: none;
+}
+
+.menubar {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #7d7979;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+body {
+    background-image: url('./Images/backgroundimage1.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.wrapper {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(225,225,225,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    width: 300px;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #fff;
+    margin: 40px 0;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    pointer-events: none;
+    transition: 0.6s;
+}
+
+
+.inputbox input:focus~label,
+.inputbox input:valid~label {
+    top: -4px;
+}
+
+
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+}
+
+.inputbox .icon {
+    position: absolute;
+    right: 8px;
+    line-height: 50px;
+}
+
+.time {
+    position: absolute;
+    background: transparent;
+    border: none;
+    width: 250px;
+    bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    left: 3px;
+}
+
+.inputbox option {
+    background: transparent;
+    color: #212223;
+}
+
+#Test_DatetimeLocal label {
+    line-height: 20px;
+}
+
+.inputboxdate {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #fff;
+    margin: 40px 0;
+}
+
+.inputboxdate label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    pointer-events: none;
+    transition: 0.6s;
+    top: -4px;
+}
+
+
+.inputboxdate input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+}
+
+.inputboxdate .icon {
+    position: absolute;
+    right: 8px;
+    line-height: 50px;
+}
+
+
+
+.submit {
+    position: absolute;
+    color: #212223;
+    bottom: 10%;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.submit:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+}

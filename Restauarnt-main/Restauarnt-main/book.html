@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Fusion Flavor | Book</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./book.css" rel="stylesheet">
+
+        <script src="https://ajax.google.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    </head>
+        
+    </body>
+    </html>
+
+
+    <body>  
+        
+
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html"><img src="./Images/darklogo.png" alt=""></a>
+                </div>
+        
+                <div class="desktopnav">
+                    <ul>
+                        <a href="./index.html" class="home"><li>Home</li></a>
+                        <a href="./menu.html" class="menu"><li>Menu</li></a>
+                        <a href="./aboutus.html" class="aboutus"><li>About Us</li></a>
+                        <a href="./contact.html" class="contactus"><li>Contact Us</li></a>
+                    </ul>
+                </div>
+
+                <div class="bookatable">
+                    <a href="./book.html">Book A Table &nbsp ></a>           
+                </div>
+                
+              <!--
+                <div class="mobilenav">
+                    <ul>
+                        <a href="./main.html" class="home"><li>Home</li></a>
+                        <a href="./menu.html" class="menu"><li>Menu</li></a>
+                        <a href="./aboutus.html" class="aboutus"><li>About Us</li></a>
+                        <a href="./contactus.html" class="contactus"><li>Contact Us</li></a>
+                    </ul>
+                </div>
+          
+                    
+                <div class="menubar" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+
+                    <script>
+                        function myFunction(x) {
+                            x.classList.toggle("change");
+                        }
+
+                    </script>
+                -->
+                </div>
+
+            </div>
+        </header>
+
+
+        <div class="wrapper">
+            <div class="formbox">
+                <h2>Book A Table</h2>
+                <form action="#">
+                    <div class="inputbox">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <input type="Full Name" required>
+                        <label>Full Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input type="mail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <input type="people" required>
+                        <label>Number of People</label>
+                    </div>
+                    <div class="inputboxdate">
+                            <span class="icon">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                            </span>
+                            <input type="datetime-local" id="Test_DatetimeLocal" required>
+                            <label>Date and Time</label>
+                    </div>
+                    <!--<div class="inputbox">
+                            <span class="icon">
+                                <ion-icon name="time-outline"></ion-icon>
+                            </span>
+                            <select name="time" class="time" required>
+                                <option>16:00</option>
+                                <option>16:30</option>
+                                <option>17:00</option>
+                                <option>17:30</option>
+                                <option>18:00</option>
+                                <option>18:30</option>
+                                <option>19:00</option>
+                                <option>19:30</option>
+                                <option>20:00</option>
+                                <option>20:30</option>
+                                <option>21:00</option>
+                                <option>21:30</option>
+                                <option>22:00</option>
+                                <option>22:30</option>
+                                <option>23:00</option>
+                                <option>23:30</option>
+                            </select>
+                            <label>Time</label>-->
+                    </div>
+                    <form>
+                        <input type="submit" value="Submit" class="submit">
+                    </form>
+                </form>
+            </div>
+        </div>
+        
+
+
+
+
+
+        <script src="./book.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!--<script>
+            $(document).ready(function() {
+                $("#DatePicker").datepicker();
+            });
+        </script>-->
+
+    </body>
+
+</html>

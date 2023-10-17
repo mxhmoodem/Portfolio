@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img{
+    height: 90px;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    padding: 0;
+    background-color: #212223;
+    border-bottom: 2px solid #212223;
+    box-shadow: 0 2px 50px #212223;
+    padding: 0 50px;
+    width: 100%;
+    margin: 0;
+    z-index: 100;
+    border-color: #fff;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+
+.desktopnav ul li{
+    padding: 0 5px;
+    margin: 0 30px;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header ul li:hover {
+    color: rgb(174, 17, 174);
+}
+
+.bookatable {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #fff;
+    background-color: #555556;
+    border-radius: 6px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    padding-left: 8px;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    letter-spacing: -.3px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.bookatable:hover {
+    cursor: pointer;
+    background-color: #909092;
+}
+
+.arrow {
+    margin: 0 0 0 10px;
+}
+
+.mobilenav ul {
+    display: none;
+}
+
+.menubar {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #7d7979;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.section1 {
+    background-color: #212223;
+    width: 100%;
+    position: relative;
+}
+
+.section1 img {
+    padding: 3%;
+    width: 100%;
+    /*filter: blur(3px);*/
+}
+
+.aboutustxt {
+    position: absolute;
+    font-size: 6vw;
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgba(63, 63, 63, 0.7);
+    padding: 8px;
+    left: 37%;
+    top: 45%;
+}
+
+
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #212223;
+    padding: 50px;
+}
+
+.description {
+    display: flex;
+    font-size: 24px;
+    width: 600px;
+    color: #fff;
+    align-items: center;
+    padding: 15px;
+    flex-shrink: 1;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.img img{
+    width: 500px;
+    flex-shrink: 1;
+    border-radius: 180px 0px;
+    box-shadow: 15px 20px 5px rgba(174, 17, 174, 0.1);
+    padding-top: 15px;
+}
+
+.img2 {
+    -webkit-animation: fadeIn 5s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+.outsideborder {
+    background-color: #212223;
+    padding: 50px 180px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #212223;
+    padding: 50px;
+    border-style: solid;
+    border-color:rgb(174, 17, 174);
+    border-radius: 30px;
+    border-width: 6px;
+
+}
+
+.section3 p {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    padding: 0 40px;
+    text-align: justify;
+}
+
+.section3 h2 {
+    padding: 30px;
+    text-align: center;
+}
+
+.footer1 {
+    display: flex;
+    background-color: #212223;
+    border-top-style: solid;
+    border-top-color: #fff;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer1 ul {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .footer1 .logo {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+  }
+  
+  .footer1 .footerinfo {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+  }
+  
+  .footer1 ul a {
+    padding: 5px;
+  }
+  
+  .footer1 ul li:hover {
+    color: rgb(174, 17, 174);
+  }
+  
+
+
+
+
+/*phone and tablet*/
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        max-width: 100%;
+    }
+    
+    .header {
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .logo img{
+        margin-left: 40px;
+    }
+
+    .desktopnav, 
+    .bookatable {
+        display: none;
+    }
+
+    .mobilenav ul{
+        margin-top: 390px ;
+        display: block;
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .mobilenav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #212223;
+        border-color: white;
+        border-style:solid;
+    }
+
+    .menubar {
+        display: inline-block;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .section3 p {
+        display: flex;
+        width: 100%;
+        justify-items: center;
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    .outsideborder {
+        background-color: #212223;
+        padding: 50px 30px;
+    }
+
+    .description {
+        display: flex;
+        font-size: 16px;
+        width: 600px;
+        color: #fff;
+        align-items: center;
+        padding: 1px;
+        flex-shrink: 1;
+        text-align: justify;
+    }
+
+    .img img{
+        width: 300px;
+        flex-shrink: 1;
+        border-radius: 100px 0px;
+        box-shadow: 15px 20px 5px rgba(174, 17, 174, 0.1);
+        padding-top: 15px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 901px) and (max-width: 1600px) {
+
+    
+    * {
+        padding: 0px;
+        margin: 0px;
+        max-width: 100%;
+    }
+    
+
+    .section3 p {
+        display: flex;
+        width: 100%;
+        justify-items: center;
+        padding: 0 50px;
+        text-align: justify;
+    }
+
+    .outsideborder {
+        background-color: #212223;
+        padding: 50px 80px;
+    }
+
+}
